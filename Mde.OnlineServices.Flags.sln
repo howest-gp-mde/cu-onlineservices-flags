@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mde.OnlineServices.Flags", "Mde.OnlineServices.Flags\Mde.OnlineServices.Flags.csproj", "{79F1AB43-5101-4861-9EAE-2BD049825203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mde.OnlineServices.Flags.WebApi", "Mde.OnlineServices.Flags.WebApi\Mde.OnlineServices.Flags.WebApi.csproj", "{52DA1B66-1D05-40DF-B8EE-C355BCACDC12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79F1AB43-5101-4861-9EAE-2BD049825203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F1AB43-5101-4861-9EAE-2BD049825203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F1AB43-5101-4861-9EAE-2BD049825203}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{79F1AB43-5101-4861-9EAE-2BD049825203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F1AB43-5101-4861-9EAE-2BD049825203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F1AB43-5101-4861-9EAE-2BD049825203}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{52DA1B66-1D05-40DF-B8EE-C355BCACDC12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DA1B66-1D05-40DF-B8EE-C355BCACDC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DA1B66-1D05-40DF-B8EE-C355BCACDC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DA1B66-1D05-40DF-B8EE-C355BCACDC12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DADEC4D-FB40-45F1-965F-63541D9B8263}
+	EndGlobalSection
+EndGlobal
