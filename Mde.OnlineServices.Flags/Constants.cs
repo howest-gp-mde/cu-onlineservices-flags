@@ -8,7 +8,7 @@ namespace Mde.OnlineServices.Flags
 {
     public static class Constants
     {
-        public const string FlagsApiUrl = "https://mjwfl60n-7077.euw.devtunnels.ms";
+        public const string FlagsApiUrl = "your-url-here";
         public const string FlagsClientName = "flagsclient";
     }
 }
