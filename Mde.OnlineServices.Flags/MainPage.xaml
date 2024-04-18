@@ -6,30 +6,21 @@
              xmlns:viewmodels="clr-namespace:Mde.OnlineServices.Flags.ViewModels"
              xmlns:models="clr-namespace:Mde.OnlineServices.Flags.Models">
 
-    <ScrollView>
-        <FlexLayout BindableLayout.ItemsSource="{Binding Flags}" Wrap="Wrap" JustifyContent="SpaceBetween">
-            <BindableLayout.ItemTemplate>
-                <DataTemplate x:DataType="models:Flag">
-                    <Border Stroke="#C49B33"
-                            StrokeThickness="4"
-                            Background="#2B0B98"
-                            Margin="8, 8"
-                            Padding="16,8"
-                            HorizontalOptions="Center">
-                        <VerticalStackLayout>
-                            <Image Source="{Binding FlagImage}" WidthRequest="50"></Image>
-                            <Label Text="{Binding Country}"
-                               TextColor="White"
-                               FontSize="18"
-                               FontAttributes="Bold" />
-                        </VerticalStackLayout>
-                    </Border>
-                </DataTemplate>
-            </BindableLayout.ItemTemplate>
-            <BindableLayout.EmptyView>
-                <Label>No flags to be displayed.</Label>
-            </BindableLayout.EmptyView>
-        </FlexLayout>
-    </ScrollView>
+    <CollectionView ItemsSource="{Binding Flags}">
+        <CollectionView.ItemsLayout>
+            <GridItemsLayout Orientation="Vertical" Span="2"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="models:Flag">
+                <VerticalStackLayout Padding="16">
+                    <Image Source="{Binding FlagImage}" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center"></Image>
+                    <Label Text="{Binding Country}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" LineBreakMode="TailTruncation"/>
+                </VerticalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+        <CollectionView.EmptyView>
+            <Label>No flags to be displayed.</Label>
+        </CollectionView.EmptyView>
+    </CollectionView>
 
 </ContentPage>

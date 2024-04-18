@@ -21,7 +21,7 @@ app.UseStaticFiles();
 
 app.MapGet("/flags", () =>
 {
-    return new List<FlagDto>
+    return new FlagDto[]
     {
         new FlagDto { CountryName = "Afghanistan", Image="af.png" },
         new FlagDto { CountryName = "Albania", Image="al.png" },
@@ -271,8 +271,7 @@ app.MapGet("/flags", () =>
         new FlagDto { CountryName = "Yemen", Image="ye.png" },
         new FlagDto { CountryName = "Zambia", Image="zm.png" },
         new FlagDto { CountryName = "Zimbabwe", Image="zw.png" },
-        new FlagDto { CountryName = "Åland Islands", Image="ax.png" },
-
+        new FlagDto { CountryName = "Åland Islands", Image="ax.png" }
     };
 })
 .WithOpenApi();

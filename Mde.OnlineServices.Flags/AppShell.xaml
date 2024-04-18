@@ -8,7 +8,7 @@
     Title="Mde.OnlineServices.Flags">
 
     <ShellContent
-        Title="Home"
+        Title="Flags"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
