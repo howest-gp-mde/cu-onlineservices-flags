@@ -21,7 +21,7 @@ namespace Mde.OnlineServices.Flags
             builder.Services.AddTransient<MainViewModel>();
             builder.Services.AddTransient<IFlagService, WebFlagService>();
 
-            builder.Services.AddHttpClient("flagsclient",
+            builder.Services.AddHttpClient(Constants.FlagsClientName,
                 config => config.BaseAddress = new Uri(Constants.FlagsApiUrl));
 #if DEBUG
     		builder.Logging.AddDebug();
